@@ -2,7 +2,7 @@
     "default": {
         "jobs": [
             {
-                "name": "cicd-sample-project-sample",
+                "name": "databricks_framework",
                 "new_cluster": {
                     "spark_version": "7.3.x-cpu-ml-scala2.12",
                     "node_type_id": "Standard_F4s",
@@ -24,7 +24,7 @@
                 }
             },
             {
-                "name": "cicd-sample-project-sample-integration-test",
+                "name": "databricks_framework-integration-test",
                 "new_cluster": {
                     "spark_version": "7.3.x-cpu-ml-scala2.12",
                     "node_type_id": "Standard_F4s",

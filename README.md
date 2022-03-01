@@ -25,13 +25,13 @@ pytest tests/unit --cov
 
 For an integration test on interactive cluster, use the following command:
 ```
-dbx execute --cluster-name=<name of interactive cluster> --job=cicd-sample-project-sample-integration-test
+dbx execute --cluster-name=<name of interactive cluster> --job=databricks_framework-integration-test
 ```
 
 For a test on an automated job cluster, deploy the job files and then launch:
 ```
-dbx deploy --jobs=cicd-sample-project-sample-integration-test --files-only
-dbx launch --job=cicd-sample-project-sample-integration-test --as-run-submit --trace
+dbx deploy --jobs=databricks_framework-integration-test --files-only
+dbx launch --job=databricks_framework-integration-test --as-run-submit --trace
 ```
 
 ## Interactive execution and development

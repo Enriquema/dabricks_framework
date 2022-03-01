@@ -44,11 +44,11 @@ stages:
       displayName: 'Run Unit tests'
 
     - script: |
-        dbx deploy --jobs=cicd-sample-project-sample-integration-test --files-only
+        dbx deploy --jobs=databricks_framework-integration-test --files-only
       displayName: 'Deploy integration test'
 
     - script: |
-        dbx launch --job=cicd-sample-project-sample-integration-test --as-run-submit --trace
+        dbx launch --job=databricks_framework-integration-test --as-run-submit --trace
       displayName: 'Launch integration on test'
 
     - task: PublishTestResults@2
@@ -94,7 +94,7 @@ stages:
         displayName: 'Run Unit tests'
 
       - script: |
-          dbx deploy --jobs=cicd-sample-project-sample
+          dbx deploy --jobs=databricks_framework
         displayName: 'Deploy the job'
 
       - task: PublishTestResults@2
